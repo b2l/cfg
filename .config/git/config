@@ -1,0 +1,37 @@
+[user]
+  email = nicolas.medda@easymile.com
+  name = Nicolas Medda
+[core]
+  autocrlf = false
+  excludesfile = ~/.gitignore
+  editor = vim
+[gui]
+  encoding = utf-8
+[color]
+  ui = true
+[alias]
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  grog = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
+  sh = show -- . ':(exclude)*.storyshot'
+  df = diff -- . ':(exclude)*.storyshot'
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  plz = push --force-with-lease
+  up = "!git co develop && git pull && git co - && git rebase develop"
+	d = difftool --no-prompt
+[pull]
+  rebase = true
+[branch]
+  autosetuprebase = always
+[diff]
+	tool = vimdiff2
+[difftool "vimdiff2"]
+  truestExitCode = true
+	prompt = false
+  cmd = vim -d $LOCAL $REMOTE
+[merge]
+  tool = vimdiff4
+[mergetool "vimdiff4"]
+  cmd = vim -d $LOCAL $MERGED $REMOTE

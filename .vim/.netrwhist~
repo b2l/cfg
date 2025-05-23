@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/nmedda/projects/session/vim'
+let g:netrw_dirhist_2='/home/nmedda/projects/session/vim/vim'
+let g:netrw_dirhist_3='/home/dev/projects/fleet-management/fm/apps/sitecc/assets'
+let g:netrw_dirhist_4='/home/dev/projects/fleet-management/fm/apps/sitecc'
+let g:netrw_dirhist_5='/home/dev/projects/fleet-management/fm/apps/sitecc/assets'
+let g:netrw_dirhist_6='/home/dev/projects/fleet-management/fm/apps/sitecc/assets/src/components/map/vehicle'
+let g:netrw_dirhist_7='/home/dev/projects/fleet-management/fm/apps/sitecc/assets'
+let g:netrw_dirhist_8='/home/dev/projects/fleet-management/fm/apps/sitecc/assets/src/components/map/vehicle'
+let g:netrw_dirhist_9='/home/dev/projects/fleet-management/fm/apps/sitecc/assets'

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+layout=`setxkbmap -query | grep layout | sed -e 's/layout: *//'`
+
+if [ $layout = "us" ]
+then
+  echo "changing to fr"
+  `setxkbmap fr`
+else
+  echo "changing to us"
+  `setxkbmap us -variant dvorak`
+fi

@@ -1,10 +1,10 @@
 " Init Plug
-if empty(glob('~/.config/vim/autoload/plug.vim'))
-   !curl -fLo ~/.config/    vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if empty(glob('~/.vim/autoload/plug.vim'))
+   !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-source ~/.config/vim/plugins.vim
+source ~/.vim/plugins.vim
 
 set expandtab
 

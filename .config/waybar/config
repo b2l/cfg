@@ -1,0 +1,67 @@
+{
+    "layer": "top",
+    "height": 30,
+    "spacing": 5,
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+				"tray",
+        "pulseaudio",
+        "network",
+        "battery",
+				"clock",
+        "custom/power"
+		],
+		"hyprland/window": {
+			"separate-outputs": true
+		},
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "{:%A, %B %d, %Y}",
+        "format": "{:%H:%M}"
+    },
+    "battery": {
+        "states": {
+            "warning": 20
+        },
+        "format": "{icon}",
+        "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+        "format-charging": "󰂄",
+        "format-warning": "󰂃",
+				"tooltip-format": "{capacity}% capacity"
+    },
+    "network": {
+        "format-wifi": "󰤨",
+        "format-disconnected": "󰤭",
+				"tooltip-format": "Connected to {essid}",
+				"on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e networkmanager_dmenu'"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}",
+        "format-muted": "󰖁",
+				"format-icons": {
+					"default": ["", "", "󰕾"]
+				},
+				"tooltip-format": "{volume}% volume"
+		},
+    "custom/power": {
+        "format": "󰐥",
+        "on-click": "sleep 0.15 && powermenu"
+    }
+}
+
+// vim: ft=jsonc

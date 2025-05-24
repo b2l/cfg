@@ -1,0 +1,4 @@
+.nvimrc
+.tern-port
+.vim/.netrwhist
+.config/dconf/user

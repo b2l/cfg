@@ -1,77 +1,92 @@
 #!/bin/bash
 set -e
 
-git clone --bare https://github.com/b2l/cfg.git $HOME/.cfg
 function config {
-   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+  /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
-mkdir -p .config-backup
-config checkout
-if [ $? = 0 ]; then
-  echo "Checked out config.";
+
+echo "dotfiles setup"
+
+if [ -d $HOME/.cfg ]; then
+  echo "Dotfiles already setup, update the usual way"
+else
+  echo "Installing dotfiles"
+  git clone --bare https://github.com/b2l/cfg.git $HOME/.cfg
+
+  mkdir -p .config-backup
+  config checkout
+  if [ $? = 0 ]; then
+    echo "Checked out config.";
   else
     echo "Backing up pre-existing dot files.";
     config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
-fi;
-config checkout
-config config status.showUntrackedFiles no
+  fi;
+  config checkout
+  config config status.showUntrackedFiles no
+fi
 
 echo "================="
 echo "Updating packages"
-sudo dnf --refresh update -y
-sudo dnf -y install dnf-plugins-core
+sudo dnf -q --refresh update -y
+sudo dnf -q -y install dnf-plugins-core
+sudo dnf -q -y copr enable solopasha/hyprland
+sudo dnf -q -y copr enable pennbauman/ports
 
 echo "================="
 echo "Installing packages"
-sudo dnf install -y \
-  --skip-unavailable \
-  --allowerasing \
-  vim \
+sudo dnf install -q -y \
+  NetworkManager \
+  NetworkManager-tui \
   autoconf \
   automake \
+  bat \
   cmake \
   ctags \
   dunst \
   fedora-workstation-repositories \
+  fira-code-fonts \
+  flatpak \
+  foot \
+  freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz \
   fuse-sshfs \
   gcc-c++ \
   htop \
   httpie \
+  hypridle \
   hyprland \
   hyprland-devel \
+  hyprlock\
   hyprpaper \
+  hyprpolkitagent \
   hypridle \
   imv \
-  mpv \
-  bat \
-  waybar \
   jq \
   keychain \
   lcov \
+  lf \
   libffi-devel \
   libtool \
   libxslt-devel \
   libyaml-devel \
-  NetworkManager \
-  NetworkManager-tui \
+  meson scdoc wayland-protocols-devel \
+  mpv \
   ncurses-devel \
   openssl-devel \
+  pipewire \
   readline-devel \
-  foot \
+  satty \
   unixODBC-devel \
   util-linux-user \
-  flatpak \
-  fira-code-fonts \
-  freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz \
-  meson scdoc wayland-protocols-devel \
+  vim \
+  waybar \
+  xdg-desktop-portal-hyprland \
+  xdg-desktop-portal-gtk \
   zsh
-
-dnf copr enable pennbauman/ports
-dnf install lf
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install -y --noninteractive flathub com.spotify.Client
 flatpak install -y --noninteractive flathub org.mozilla.firefox
 flatpak install -y --noninteractive flathub com.vscodium.codium
-flatpak install -y --noninteractive org.mozilla.Thunderbird
+flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+

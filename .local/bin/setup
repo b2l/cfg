@@ -62,6 +62,7 @@ sudo dnf install -q -y \
   hyprpolkitagent \
   imv \
   jq \
+  kanshi \
   keychain \
   lcov \
   lf \

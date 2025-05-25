@@ -28,7 +28,6 @@ sudo dnf install -q -y \
   htop \
   httpie \
   hypridle \
-  hypridle \
   hyprland \
   hyprland-devel \
   hyprlang \
@@ -46,7 +45,6 @@ sudo dnf install -q -y \
   libxslt-devel \
   libyaml-devel \
   git \
-  meson scdoc wayland-protocols-devel \
   mpv \
   ncurses-devel \
   openssl-devel \

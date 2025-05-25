@@ -1,6 +1,7 @@
 #!/bin/sh
 
 alias conf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias c=conf
 
 # settings for common commands
 alias cp="cp -iv"

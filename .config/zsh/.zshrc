@@ -104,3 +104,4 @@ export FZF_DEFAULT_OPTS=" \
 
 # to customize prompt, run `p10k configure`
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+export TZ='Europe/Paris'

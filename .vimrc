@@ -7,6 +7,9 @@ endif
 source ~/.vim/plugins.vim
 
 set expandtab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 
 set linebreak
 
@@ -24,10 +27,6 @@ set numberwidth=5
 set smartcase
 
 set splitbelow splitright
-
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
 
 set termguicolors
 set textwidth=80

@@ -53,12 +53,13 @@ sudo dnf install -q -y \
   htop \
   httpie \
   hypridle \
+  hypridle \
   hyprland \
   hyprland-devel \
+  hyprlang \
   hyprlock\
   hyprpaper \
   hyprpolkitagent \
-  hypridle \
   imv \
   jq \
   keychain \
@@ -79,8 +80,8 @@ sudo dnf install -q -y \
   util-linux-user \
   vim \
   waybar \
-  xdg-desktop-portal-hyprland \
   xdg-desktop-portal-gtk \
+  xdg-desktop-portal-hyprland \
   zsh
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo

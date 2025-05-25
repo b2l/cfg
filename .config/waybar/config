@@ -10,11 +10,11 @@
         "hyprland/window"
     ],
     "modules-right": [
-				"tray",
+        "tray",
         "pulseaudio",
         "network",
         "battery",
-				"clock",
+        "clock",
         "custom/power"
 		],
 		"hyprland/window": {

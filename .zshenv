@@ -1,6 +1,6 @@
 # default apps
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export TERMINAL="foot"
 export BROWSER="firefox"
 

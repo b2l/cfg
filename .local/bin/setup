@@ -55,7 +55,7 @@ sudo dnf install -q -y \
   udiskie \
   unixODBC-devel \
   util-linux-user \
-  vim \
+  neovim \
   waybar \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \

@@ -15,6 +15,7 @@ sudo dnf install -q -y \
   autoconf \
   automake \
   bat \
+  cargo \
   cmake \
   ctags \
   dunst \
@@ -66,4 +67,4 @@ flatpak install -y --noninteractive flathub com.spotify.Client
 flatpak install -y --noninteractive flathub org.mozilla.firefox
 flatpak install -y --noninteractive flathub com.vscodium.codium
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
-
+cargo install trashy

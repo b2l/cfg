@@ -16,6 +16,7 @@ sudo dnf install -q -y \
   automake \
   bat \
   cargo \
+  chafa \
   cmake \
   ctags \
   dunst \
@@ -47,6 +48,7 @@ sudo dnf install -q -y \
   libxslt-devel \
   libyaml-devel \
   mpv \
+  mupdf \
   ncurses-devel \
   openssl-devel \
   pipewire \
@@ -68,3 +70,6 @@ flatpak install -y --noninteractive flathub org.mozilla.firefox
 flatpak install -y --noninteractive flathub com.vscodium.codium
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
 cargo install trashy
+
+# For lf pdf preview
+mkdir ~/.cache/lf

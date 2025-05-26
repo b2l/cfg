@@ -12,8 +12,6 @@ alias mkd="mkdir -pv"
 # alias ls="exa --icons --group-directories-first"
 alias lf="lfcd"
 alias locate="plocate"
-alias tp="trash-put"
-alias tpr="trash-restore"
 alias cat='bat'
 alias grep='grep --color=always'
 

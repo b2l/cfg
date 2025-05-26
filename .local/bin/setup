@@ -25,6 +25,7 @@ sudo dnf install -q -y \
   freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz \
   fuse-sshfs \
   gcc-c++ \
+  git \
   htop \
   httpie \
   hypridle \
@@ -44,13 +45,13 @@ sudo dnf install -q -y \
   libtool \
   libxslt-devel \
   libyaml-devel \
-  git \
   mpv \
   ncurses-devel \
   openssl-devel \
   pipewire \
   readline-devel \
   satty \
+  udiskie \
   unixODBC-devel \
   util-linux-user \
   vim \

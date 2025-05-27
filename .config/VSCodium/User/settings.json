@@ -1,0 +1,11 @@
+{
+    "vim.enableNeovim": true,
+    "vim.foldfix": true,
+    "vim.handleKeys": {
+        "<C-p>": false,
+        "<C-k><C-o>": false,
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false
+    }
+}

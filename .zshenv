@@ -26,6 +26,12 @@ export MANPAGER="vim +Man!"
 # set the localization
 export LC_ALL=en_US.UTF-8
 
+# NPM as user
+NPM_PACKAGES=~/.npm-packages
+prefix=~/.npm-packages
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+PATH=$PATH:$NPM_PACKAGES/bin
+
 # lf icons
 export LF_ICONS="\
 tw=:\

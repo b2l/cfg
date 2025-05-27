@@ -7,5 +7,7 @@
         "<C-d>": true,
         "<C-s>": false,
         "<C-z>": false
-    }
+    },
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha"
 }

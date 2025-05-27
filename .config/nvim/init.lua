@@ -24,7 +24,7 @@ require('lazy').setup({
 	'tpope/vim-repeat',
 	'tpope/vim-surround',
 	'tpope/vim-vinegar',
-	'ayu-theme/ayu-vim',
+	'catppuccin/nvim',
 	  {
 	  -- LSP Configuration & Plugins
 	  'neovim/nvim-lspconfig',
@@ -117,6 +117,8 @@ require('lazy').setup({
 vim.o.hlsearch = false
 vim.wo.number = true
 vim.o.mouse = 'a'
+
+vim.cmd [[colorscheme catppuccin-mocha]]
 
 vim.o.breakindent = true
 vim.o.undofile = true

@@ -8,60 +8,61 @@ sudo dnf -q -y install dnf-plugins-core
 sudo dnf -q -y copr enable solopasha/hyprland
 sudo dnf -q -y copr enable pennbauman/ports
 
+
 echo "================="
 echo "Installing packages"
 sudo dnf install -q -y \
-  NetworkManager \
-  autoconf \
-  automake \
-  bat \
-  cargo \
-  chafa \
-  cmake \
-  ctags \
-  dunst \
-  fedora-workstation-repositories \
-  fira-code-fonts \
-  flatpak \
-  foot \
-  freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz \
-  fuse-sshfs \
-  gcc-c++ \
-  git \
-  htop \
-  httpie \
-  hypridle \
-  hyprland \
-  hyprland-devel \
-  hyprlang \
-  hyprlock\
-  hyprpaper \
-  hyprpolkitagent \
-  imv \
-  jq \
-  kanshi \
-  keychain \
-  lcov \
-  lf \
-  libffi-devel \
-  libtool \
-  libxslt-devel \
-  libyaml-devel \
-  mpv \
-  mupdf \
-  ncurses-devel \
-  openssl-devel \
-  pipewire \
-  readline-devel \
-  satty \
-  udiskie \
-  unixODBC-devel \
-  util-linux-user \
-  neovim \
-  waybar \
-  xdg-desktop-portal-gtk \
-  xdg-desktop-portal-hyprland \
-  zsh
+	NetworkManager \
+	autoconf \
+	automake \
+	bat \
+	cargo \
+	chafa \
+	cmake \
+	ctags \
+	dunst \
+	fedora-workstation-repositories \
+	fira-code-fonts \
+	flatpak \
+	foot \
+	freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz \
+	fuse-sshfs \
+	gcc-c++ \
+	git \
+	htop \
+	httpie \
+	hypridle \
+	hyprland \
+	hyprland-devel \
+	hyprlang \
+	hyprlock\
+	hyprpaper \
+	hyprpolkitagent \
+	imv \
+	jq \
+	kanshi \
+	keychain \
+	lcov \
+	lf \
+	libffi-devel \
+	libtool \
+	libxslt-devel \
+	libyaml-devel \
+	mpv \
+	mupdf \
+	ncurses-devel \
+	neovim \
+	openssl-devel \
+	pipewire \
+	readline-devel \
+	satty \
+	udiskie \
+	unixODBC-devel \
+	util-linux-user \
+	waybar \
+	xdg-desktop-portal-gtk \
+	xdg-desktop-portal-hyprland \
+	zsh
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 

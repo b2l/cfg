@@ -63,3 +63,5 @@ alias subtext1='#bac2de'
 alias surface0='#313244'
 alias surface1='#45475a'
 alias surface2='#585b7'
+
+alias tws="bluetoothctl connect $TWS_50i"

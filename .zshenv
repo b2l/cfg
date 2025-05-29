@@ -27,10 +27,13 @@ export MANPAGER="vim +Man!"
 export LC_ALL=en_US.UTF-8
 
 # NPM as user
-NPM_PACKAGES=~/.npm-packages
-prefix=~/.npm-packages
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-PATH=$PATH:$NPM_PACKAGES/bin
+export NPM_PACKAGES=~/.npm-packages
+export prefix=~/.npm-packages
+export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+export PATH=$PATH:$NPM_PACKAGES/bin
+
+# Bluetooth device
+export TWS_50i="8E:60:21:C9:CD:5B"
 
 # lf icons
 export LF_ICONS="\
